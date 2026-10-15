@@ -1,11 +1,63 @@
-# Project-Tracker
- A centralized project management and tracking platform that enables real-time visibility into project health, resource utilization, and delivery progress.
-The solution will provide a self-service capability for project managers and team leads to manage projects, track deliverables, allocate resources, and monitor budgets without requiring integration with external systems.
+# Coding Workshop - Frontend Code
 
-The technical solution involves developing a stand-alone web application using modern technologies. The application will have the following features:
+## Overview
 
-User authentication and authorization
-Role-based access control
-CRUD operations for projects, deliverables, resources, and budget tracking
-Search and filter functionality
-Responsive design for mobile and desktop usage
+This folder contains React frontend application with hello world example.
+
+## Prerequisites
+
+- React - JavaScript library for building user interfaces
+- React Router - Client-side routing for React
+- Material UI - Comprehensive UI component library
+
+## Structure
+
+```
+coding-workshop-participant/
+├── frontend/              # React frontend
+│   ├── public/              # Public assets
+│   ├── src/                 # Source code
+│   │   ├── pages/             # Page components
+│   │   ├── components/        # Reusable components
+│   │   ├── services/          # API client
+│   │   └── App.js             # Main app
+│   ├── .env.sample          # React environment variables
+│   ├── eslint.config.js     # ESLint JS tool configuration
+│   ├── index.html           # Landing page
+│   ├── package.json         # App metadata with dependencies
+│   ├── README.md            # Frontend guide (YOU ARE HERE)
+│   └── vite.config.js       # Vite build tool configuration
+├── ...
+```
+
+## Usage
+
+### Local Development
+
+To run your application locally:
+
+```sh
+./bin/start-dev.sh
+```
+
+To view your application, open the browser and navigate to `http://localhost:3000`.
+
+### Cloud Deployment
+
+To deploy your frontend to AWS:
+
+```sh
+./bin/deploy-frontend.sh
+```
+
+To view your application, open the browser and navigate to CloudFront URL.
+
+## Clean Up
+
+To remove all deployed resources (including frontend):
+
+```sh
+./bin/cleanup-environment.sh
+```
+
+**Warning**: This removes all infra resources. Cannot be undone.
